@@ -2,6 +2,7 @@ body{
     margin: 0%;
     top: 0%;
     cursor: none;
+    overflow-x: hidden;
 }
 input::placeholder{
     color:rgba(245, 245, 245, 0.863);
@@ -22,21 +23,17 @@ input::placeholder{
     padding-top: 3%;
     transition: 0.3s ease-in-out;
 }
-.logo a{
-    color: whitesmoke;
-    text-decoration: none;
-}
-.logo a:hover{
-    color:  #39b5b9;
-}
 /* .logo:hover{
     transform: scale(1.1);
 } */
+ #hr{
+  border: 1px solid #39b5b9;
+ }
    /* navbar List */
 .items{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    gap:5%;
+    gap:3%;
     margin-left: 50%;
     margin-top: -1.5%;
     cursor: pointer;
@@ -49,6 +46,18 @@ input::placeholder{
 .items a:hover{
     color:  #39b5b9;
 }
+  /* home horizontal line */
+.items a#active::after {
+      content: "";
+      position: absolute;
+      right: 46.9%;
+      width: 3.1%;
+      top: 11%;
+      height: 4px;
+      background:  #39b5b9;
+      border-radius: 2px;
+      box-shadow: 0 0 10px  #39b5b9;
+    }
 .list{
     list-style: none;
 } 
@@ -56,43 +65,54 @@ input::placeholder{
 .box{
     cursor: pointer;
     width: 100%;
-    height: 470px;
+    height: 480px;
+    margin-top: 3%;
     background-color:rgb(39, 1, 39) ;
 }
 .para{
+    position: relative;
     color: whitesmoke;
     font-size: 30px;
-    padding-top: 7%;
+    top: -15%;
+    padding-top: 11%;
     padding-left: 10%;
 }
 .para1{
+    position: relative;
+    top: -21%;
     color: whitesmoke;
     font-size: 30px;
-    margin-top: -15px;
     padding-left: 10%;
 }
 .par{
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 40px;
+    top: -24%;
     color:  #39b5b9;
-    margin-top: -64px;
     padding-left: 17%;
 }
 .par1{
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 40px;
+    top: -16%;
     color:  #39b5b9;
     margin-top: -64px;
     padding-left:18.5%;
+}
+.img{
+  /* padding-top: 15%; */
+  height: 460px;
 }
    /* Paragraph */
 .paragraph{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: rgb(187, 180, 180);
-    margin-top: -10px;
+    margin-top: -50px;
     padding-left: 10%;
 }
    /* Num Icon */
@@ -100,13 +120,14 @@ input::placeholder{
     color: rgb(83, 10, 10);
     margin-left: 10%;
     font-size: 15px;
+    margin-top: 25px;
 }
    /* Num Heading */
 .num{
     color: whitesmoke;
     margin-left: 12%;
     font-size: 20px;
-    margin-top: -23px;
+    margin-top: -20px;
 }
      /* Phone Num */
 .phone{
@@ -114,14 +135,14 @@ input::placeholder{
     color: rgb(187, 180, 180);
     margin-left: 11%;
     font-size: 13px;
-    margin-top: -10px;
+    margin-top: 3px;
 }
      /* Email Heading */
 .mail{
     color: whitesmoke;
     margin-left: 28%;
     font-size: 20px;
-    margin-top: -33px;
+    margin-top: 4px;
 }
     /* Email */
 .email{
@@ -129,11 +150,12 @@ input::placeholder{
     color: rgb(187, 180, 180);
     margin-left: 26%;
     font-size: 13px;
-    margin-top: -10px;
 }
     /* Emial icon */
 .icn{
+  position: relative;
     color: white;
+    top: 5%;
     margin-left: 26%;
     font-size: 15px;
     margin-top: -55px;
@@ -148,11 +170,11 @@ input::placeholder{
     margin-left: 10.5%;
     cursor: pointer;
     border-color:  #39b5b9;
-    transition: 0.6s ease-in-out;
+    transition: 0.3s ease;
 }
 .button:hover{
     background-color: #00faff;
-    /* transform: translateX(200px) */
+    background-position: right;
 }
 .button a{
     font-family: Arial, Helvetica, sans-serif;
@@ -171,18 +193,7 @@ input::placeholder{
     margin-left: 40%;
     margin-top: -500px;
 }
-    /* home horizontal line */
-.items a#active::after {
-      content: "";
-      position: absolute;
-      right: 44%;
-      width: 3.1%;
-      top: 11%;
-      height: 4px;
-      background:  #39b5b9;
-      border-radius: 2px;
-      box-shadow: 0 0 10px  #39b5b9;
-    }
+    
       /* blackish box */
 .box1{
     cursor: pointer;
@@ -204,13 +215,16 @@ input::placeholder{
 }
    /* horizontal line */
 .hr{
-    margin-top: -20px;
+    margin-left: 600px;
     width: 145px;
     border: none;
     height: 3px;
     background: linear-gradient(to right, #00faff, #00faff,blue);
 }  
   /* introduction */
+  .int{
+    margin-left: -20px;
+  }
 .intro{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
@@ -255,6 +269,9 @@ input::placeholder{
     transform: translateX(200px);
 } */
     /* skills */
+    .skil{
+      margin-left: -20px;
+    }
  .skill{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
@@ -301,7 +318,7 @@ input::placeholder{
      /* buttons */
  .buton{
     margin-top: 10px;
-    margin-left: 140px;
+    margin-left: 115px;
  }
      /* HTML btn */
  #btn{
@@ -357,6 +374,10 @@ input::placeholder{
     height: 70px;
     margin-left: 120px;
 }
+   /* Education */
+   .edu{
+    margin-left: -20px;
+   }
 .education{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
@@ -370,6 +391,9 @@ input::placeholder{
     margin-top: -70px;
 }
     /* Achievements & Certifications */
+    .achieve{
+      margin-left: -20px;
+    }
 #achievements{
     color:  #39b5b9;
     margin-top: 30px;
@@ -433,7 +457,8 @@ input::placeholder{
     text-decoration: none;
 }
 .hr-last{
-    margin-top: -10px;
+    margin-top: 5px;
+    margin-left: 600px;
     width: 135px;
     border: none;
     height: 3px;
@@ -445,11 +470,11 @@ input::placeholder{
     width: 400px;
     height: 210px;
     margin-top: 240px;
-    margin-left: 220px;
+    margin-left: 240px;
 }
 .way{
     position: relative;
-    top: 3px;
+    top: -1px;
     font: 1em sans-serif;
     color: rgb(179, 176, 176);
     margin-left: 50px;
@@ -457,6 +482,8 @@ input::placeholder{
     padding-top: 30px;
 }
 .way1{
+  margin-top: 16px;
+    margin-left: 5px;
     color:  #39b5b9;
 }
 #i{
@@ -470,14 +497,14 @@ input::placeholder{
     margin-left: 220px;
     font-weight: bolder;
     font-size: 22px;
-    margin-top: -90px;
+    margin-top: -69px;
 }
 .way3{
     color:  #39b5b9;
     font: 1em sans-serif;
     margin-left: 100px;
     font-weight: bolder;
-    margin-top: -5px;
+    margin-top: 10px;
     font-size: 20px;
 }
 .way4{
@@ -510,10 +537,12 @@ input::placeholder{
     background-color: rgba(58, 54, 54, 0.2);
     width: 400px;
     height: 600px;
-    margin-left: 750px;
+    margin-left: 700px;
     margin-top: -390px;
 }
 .fo{
+  position: relative;
+  top: -15px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 50px;
     color: rgb(226, 220, 220);
@@ -527,7 +556,8 @@ input::placeholder{
     margin-left: -50px;
 }
 .fo1{
-    margin-left: 220px;
+  position: relative;
+    left: 220px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(226, 220, 220);
@@ -540,7 +570,6 @@ input::placeholder{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(226, 220, 220);
     font-size: 18px;
-    margin-top: -10px;
 }
 .fo3{
     margin-left: 50px;
@@ -548,7 +577,6 @@ input::placeholder{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(226, 220, 220);
     font-size: 18px;
-    margin-top: -10px;
 }
 #holder{
     font-size: larger;
@@ -667,23 +695,186 @@ input::placeholder{
 }
 
 
-/* For tablets & smaller */
-/* @media (max-width: 1024px) {
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive (max-width: 480px) */
+*{
+      box-sizing:border-box;
+      margin:0;
+      padding:0
+    }
+@media (max-width: 460px) {
+  body {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+  .navbar {
+    cursor: pointer;
+    width:100%;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    margin-left: -20px;
+    padding-left: 120px;
+    text-align: left; 
+  }
+
+  .logo {
+    margin-left: -93px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
   .items {
-    margin-left: 20%;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .items li {
+    display: block;
+  }
+
+  /* Hero Section */
+  .box {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .box h2, 
+  .box h4 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 15px 0;
   }
 
   .img {
-    width: 40%;
+    max-width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 15px auto;
     display: block;
   }
-} */
 
-/* For mobile screens */
-@media (max-width: 768px) {
+  .button {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  /* About / Skills / Education Sections */
+  .box1, .box2 {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .intro1, .skill1, .education1, .achievements1 {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .buton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #btn, #btn1, #btn2 {
+    flex: 1 1 100px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Contact Section */
+  .box2 {
+    text-align: center;
+  }
+
+  .box-wp {
+    margin-bottom: 20px;
+  }
+
+  .box-l {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #holder2 {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .bl, .bl1 {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  /* Hide extra vertical lines on mobile */
+  .vertical-line,
+  .vertical-line1,
+  .vertical-line2,
+  .vertical-line3 {
+    display: none;
+  }
+  .box-l{
+  margin-left: -50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Tablet & large Mobiles screens */
+@media (max-width: 360px-768px) {
   body {
     background-position: fixed;
     overflow-x: hidden;
@@ -692,20 +883,19 @@ input::placeholder{
 
   /* Navbar */
   .navbar {
-    display: flex;
-    padding: 15px;
+    width: 75%;
     padding-left: 35px;
   }
-
   .logo {
-    margin-left: 0;
-    padding: 0;
+    margin-left: 4%;
+    padding: 10;
     font-size: 22px;
   }
 
   .items {
+    font: 1em sans-serif;
     margin: 10px 0 0 0;
-    gap: 20px;
+    gap: 5%;
     text-align: center;
   }
     /* home horizontal line */
@@ -718,6 +908,7 @@ input::placeholder{
     }
   /* Purple box */
   .box {
+    /* overflow-x: hidden; */
     text-align: center;
     margin-top: 90px;
     margin-left: -540px;
