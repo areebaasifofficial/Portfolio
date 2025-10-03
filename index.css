@@ -1053,6 +1053,9 @@ input::placeholder {
 }
 
 @media (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
     .box {
         height: 300px;
         text-align: left;
@@ -1206,6 +1209,9 @@ input::placeholder {
 
 /* Responsive Styles for ≤ 480px */
 @media (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
     .box1 {
         height: 110vh;
         /* margin-left: -10px; */
@@ -1318,6 +1324,9 @@ input::placeholder {
 
 
 @media (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
     .box2 {
         padding: 15px;
         text-align: center;
