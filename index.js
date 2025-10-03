@@ -20,8 +20,14 @@ closePopup.addEventListener("click", () => {
 });
 
 // Hide when clicking outside
-// window.addEventListener("click", (e) => {
-//   if (e.target === popup) {
-//     popup.style.display = "none";
-//   }
-// });
+window.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});
+ const toggle = document.getElementById('menu-toggle');
+    const navItems = document.getElementById('nav-items');
+
+    toggle.addEventListener('click', () => {
+      navItems.classList.toggle('show');
+    });

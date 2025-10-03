@@ -67,7 +67,7 @@ input::placeholder {
 
 .items a {
     text-decoration: none;
-    transition-property: color ;
+    transition-property: color;
     transition: 0.5s;
     color: whitesmoke;
 }
@@ -94,12 +94,18 @@ input::placeholder {
     list-style: none;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 /* Purple Box */
 .box {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     width: 100%;
-    margin-top: -1%;
+    margin-top: -3%;
     height: 480px;
     background-color: rgb(39, 1, 39);
 }
@@ -235,7 +241,8 @@ input::placeholder {
 
 /* Num Icon */
 .icon {
-    color: rgb(83, 10, 10);
+    /* color: rgb(83, 10, 10); */
+    color: rgb(182, 179, 179);
     margin-left: -85%;
     font-size: 15px;
     margin-top: 25px;
@@ -968,4 +975,491 @@ input::placeholder {
     border-radius: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 10px #00faff;
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .items {
+        display: none;
+        z-index: 19999;
+        font-size: 30px;
+        flex-direction: column;
+        background: #333;
+        width: 92%;
+        position: absolute;
+        top: 73px;
+        left: -190px;
+    }
+
+    .items:hover {
+        font-size: 20px;
+    }
+
+    #active::after {
+        content: "";
+        position: absolute;
+        right: 45%;
+        width: 10%;
+        top: 80%;
+        height: 4px;
+        background: #39b5b9;
+        border-radius: 2px;
+        box-shadow: 0 0 10px #39b5b9;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    #hr {
+        display: none;
+    }
+
+    .items.show {
+        display: flex;
+    }
+
+    .items li {
+        position: relative;
+        left: -10px;
+        margin: 10px;
+        padding: 10px;
+        border-bottom: 2px solid #23a2a7;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        position: relative;
+        top: -20px;
+        left: 150px;
+        display: block;
+    }
+
+    .logo {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .logo:hover {
+        font-size: 18px;
+    }
+
+    .items a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        height: 300px;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .par {
+        position: relative;
+        left: 50px;
+        top: -36px;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .par1 {
+        position: relative;
+        left: 65px;
+        top: -57px;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .para1 {
+        position: relative;
+        left: -5px;
+        top: -30px;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .para {
+        position: relative;
+        left: -5px;
+        top: -10px;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .paragraph {
+        margin-top: -50px;
+        font-size: 7px;
+        left: -15px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    .icon {
+        position: relative;
+        margin-left: 0px;
+        font-size: 10px;
+        top: 10px;
+    }
+
+    .icn {
+        position: relative;
+        margin-left: 131px;
+        font-size: 12px;
+        top: 32px;
+    }
+
+    .num {
+        position: relative;
+        top: -35px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .mail {
+        position: relative;
+        top: -15px;
+        left: 135px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .phone {
+        margin-left: 15px;
+        font-size: 10px;
+        margin-top: -30px;
+        word-wrap: break-word;
+    }
+
+    .email {
+        position: relative;
+        margin-left: 150px;
+        font-size: 12px;
+        top: -6px;
+        word-wrap: break-word;
+    }
+
+    .button {
+        top: 0px;
+        display: block;
+        width: 80px;
+        height: 7vh;
+        left: -150px;
+        max-width: 250px;
+        margin: auto;
+        padding: 1px;
+        border-radius: 6px;
+    }
+
+    #freelancerBtn {
+        top: -43px;
+        display: block;
+        width: 90px;
+        height: 7vh;
+        left: -10px;
+        max-width: 250px;
+        margin: auto;
+        padding: 1px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    /* Popup responsiveness */
+    .popup-content {
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 88vh;
+        max-width: 300px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .popup-content h2 {
+        font-size: 16px;
+    }
+
+    .card {
+        position: relative;
+        top: -35px;
+        left: 15px;
+        height: 100px;
+        margin: 10px 0;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    /* Image responsiveness */
+    .img {
+        width: 27%;
+        left: 255px;
+        height: auto;
+        z-index: 9999;
+        margin-top: 30px;
+    }
+}
+
+/* Responsive Styles for ≤ 480px */
+@media (max-width: 480px) {
+    .box1 {
+        height: 110vh;
+        /* margin-left: -10px; */
+        padding: 15px;
+        text-align: left;
+    }
+
+    .pr {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .pr a {
+        font-size: 35px;
+    }
+
+    .intro,
+    .skill {
+        position: relative;
+        font-size: 20px;
+        left: 40px;
+        top: 40px;
+        margin: 10px 0;
+    }
+
+    .education {
+        position: relative;
+        top: 10px;
+        font-size: 20px;
+        left: -115px;
+        margin: 10px 0;
+    }
+
+    .achievements {
+        position: relative;
+        font-size: 20px;
+        left: 605px;
+        margin: 10px 0;
+    }
+
+    .skill1 {
+        font-size: 5px;
+        line-height: 1.5;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .intro1 {
+        font-size: 6.5px;
+        line-height: 1.5;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    .education1,
+    .achievements1 {
+        font-size: 6.5px;
+        line-height: 1.5;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    /* Remove vertical lines or make them thinner */
+    .vertical-line,
+    .vertical-line1,
+    .vertical-line2,
+    .vertical-line3 {
+        display: none;
+        /* hide lines on small screens */
+    }
+
+    .hr {
+        margin-left: 115px;
+        margin-top: -40px;
+    }
+
+    /* Buttons styling */
+    .buton {
+        position: relative;
+        top: -10px;
+        font-size: 7px;
+        left: 979px;
+        margin: 15px 0;
+    }
+
+    .buton button {
+        width: 18.5%;
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 0px;
+        font-size: 10px;
+        border-radius: 6px;
+    }
+
+    /* Certificate Button */
+    .certificate .achievement {
+        width: 220px;
+        white-space: nowrap;
+        margin-left: 570px;
+        font-size: 10px;
+        padding: 10px;
+        margin-top: -10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .box2 {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .pr-last a {
+        font-size: 22px;
+    }
+
+    .hr-last {
+        position: relative;
+        width: 30%;
+        top: -20px;
+        margin: 10px auto;
+    }
+
+    /* WhatsApp contact box */
+    .box-wp {
+        width: 86%;
+        height: 20vh;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .way {
+        margin-top: -35px;
+    }
+
+    .way3 {
+        margin-top: -10px;
+    }
+
+    .way4 {
+        margin-left: 60px;
+    }
+
+    .b {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 15px auto;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    .b a {
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    /* Email form */
+    .box-l {
+        padding: 15px;
+        width: 86%;
+        height: 80vh;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 8px;
+    }
+
+    .fo {
+        font-size: larger;
+        margin-top: -20px;
+        margin-left: -190px;
+    }
+
+    .fo1 {
+        margin-top: -29px;
+        font-size: larger;
+        margin-left: -10px;
+    }
+
+    .fo2 {
+        font-size: larger;
+        margin-top: -10px;
+    }
+
+    .fo3 {
+        font-size: larger;
+        margin-top: -15px;
+        margin-left: 80px;
+    }
+
+    .fo4 {
+        font-size: 17px;
+        margin: 8px 0;
+        margin-top: 30px;
+    }
+
+    #holder,
+    #holder1 {
+        width: 90%;
+        height: 5vh;
+        max-width: 300px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 6px;
+        margin: 8px 0;
+    }
+
+    #holder2 {
+        width: 40%;
+        height: 8vh;
+        max-width: 300px;
+        margin-left: -20px;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 19px;
+        border-radius: 20px;
+        display: block;
+    }
+
+    /* Contact icons */
+    .bl {
+        position: relative;
+        top: 2px;
+        left: -90px;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+    .bl1 {
+        position: relative;
+        top: -20px;
+        left: -80px;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+    #en1 {
+        padding-top: 25px;
+        position: relative;
+        top: -25px;
+        font-size: 22px;
+    }
+
+    #wp {
+        position: relative;
+        top: 2px;
+        font-size: 28px;
+    }
 }
