@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 
@@ -21,7 +22,7 @@
     <ul class="items" id="nav-items">
       <li class="list"><a href="index.html" id="active">Home</a></li>
       <hr id="hr">
-      <li class="list"><a href="#">About</a></li>
+      <li class="list"><a href="#box1">About</a></li>
       <hr id="hr">
       <li class="list"><a href="#">Skills</a></li>
       <hr id="hr">
@@ -29,11 +30,11 @@
       <hr id="hr">
       <li class="list"><a href="#">Projects</a></li>
       <hr id="hr">
-      <li class="list"><a href="#">Contact</a></li>
+      <li class="list"><a href="#box2">Contact</a></li>
     </ul>
-<div class="menu-toggle" id="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-  </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
   </nav>
   <div class="box">
     <h2 class="para">Hi I'm</h2>
@@ -78,7 +79,11 @@
     </div>
     <img src="Veil.png" class="img">
   </div>
-  <div class="box1">
+  <div class="rob">
+    <h1>Let's Connect!</h1>
+  <a href="https://areebaasifofficial.github.io/Virtual-Assistant/" target=_blank><img src="robot-removebg-preview.png"
+      id="robot"></a></div>
+  <div class="box1" id="box1">
     <h1 class="pr"><a href="#">About Me</h1></a>
     <hr class="hr">
     <div class="int">
@@ -124,7 +129,119 @@
     </div>
   </div>
   </div>
-  <div class="box2">
+  <section id="my-skills">
+    <div class="sk" id="sk">
+  <h1 class="skills-title">My Skills</h1>
+  <hr class="hr2">
+
+  <div class="my-skill">
+    <label>HTML</label>
+    <div class="my-skill-bar">
+      <div class="my-skill-level" data-level="100%">100%</div>
+    </div>
+  </div>
+
+  <div class="my-skill">
+    <label>CSS</label>
+    <div class="my-skill-bar">
+      <div class="my-skill-level" data-level="100%">100%</div>
+    </div>
+  </div>
+
+  <div class="my-skill">
+    <label>JavaScript</label>
+    <div class="my-skill-bar">
+      <div class="my-skill-level" data-level="95%">95%</div>
+    </div>
+  </div>
+</div>
+
+    <div id="graph">
+      <h1 id="sku">Skill Growth (2020–2025)</h1>
+      <hr class="hr1">
+      <div class="chart-container">
+        <div class="chart-box">
+          <canvas id="htmlChart"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="cssChart"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="jsChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <button id="graph-btn" class="graph-btn">Show Graph</button>
+  </section>
+  <div id="box-2l">
+  <section id="projects">
+  <h1 class="section-title">My Projects</h1>
+  <hr class="hr3">
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="web h.png" alt="Project 1">
+      <div class="project-info">
+        <h2>Resturent Website</h2>
+        <p>Designed and developed the complete frontend.</p>
+        <a href="https://areebaasifofficial.github.io/Resturent/" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="home.png" alt="Project 2">
+      <div class="project-info">
+        <h2>Real-Estate Website</h2>
+        <p>Complete frontend design for an online store using React.js.</p>
+        <a href="https://areebaasifofficial.github.io/Real-Estate/" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="To-Do-List prototype.png" alt="Project 3">
+      <div class="project-info">
+        <h2>To-Do-list Web App</h2>
+        <p>Designed and developed the complete frontend.</p>
+        <a href="https://areebaasifofficial.github.io/To-Do-List/" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+  </div>
+  <div class="projects-container1">
+    <div class="project-card">
+      <img src="Calculater prototype..png" alt="Project 1">
+      <div class="project-info">
+        <h2>Dynamic Calculater Web App</h2>
+        <p>A modern responsive portfolio built with HTML, CSS, and JavaScript.</p>
+        <a href="https://areebaasifofficial.github.io/Calaulator/" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Clock prototype..png" alt="Project 2">
+      <div class="project-info">
+        <h2>Dynamic Clock Web App</h2>
+        <p>Complete frontend design for an online store using React.js.</p>
+        <a href="https://areebaasifofficial.github.io/Clock/" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project3.jpg" alt="Project 3">
+      <div class="project-info">
+        <h2>Weather App</h2>
+        <p>A weather forecasting app using OpenWeather API.</p>
+        <a href="https://yourprojectlink.com" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- <div class="project-links">
+  <a href="https://github.com/yourusername/project" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://yourprojectdemo.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div> -->
+
+
+</section></div>
+  <div class="box2" id="box2">
     <h1 class="pr-last"><a href="#">Get In Touch</h1></a>
     <hr class="hr-last">
     <div class="box-wp">
@@ -153,10 +270,10 @@
     </form>
   </div>
 
-
   </nav>
   <div class="cursor"></div>
   <script src="index.js"></script>
+
 </body>
 
 </html>
